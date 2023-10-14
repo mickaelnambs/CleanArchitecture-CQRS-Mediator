@@ -25,5 +25,15 @@ namespace API.Controllers
 
             return Ok();
         }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult> EditTodo(Guid id, Todo todo)
+        {
+            todo.Id = id;
+
+            await Mediator.Send(new Edit.Command {Todo = todo});
+
+            return Ok();
+        }
     }
 }
