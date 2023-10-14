@@ -17,5 +17,13 @@ namespace API.Controllers
         {
             return await Mediator.Send(new Details.Query{Id = id});
         }
+
+        [HttpPost]
+        public async Task<ActionResult> CreateTodo([FromBody] Todo todo)
+        {
+            await Mediator.Send(new Create.Command {Todo = todo});
+
+            return Ok();
+        }
     }
 }
