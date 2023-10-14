@@ -19,7 +19,7 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> CreateTodo([FromBody] Todo todo)
+        public async Task<IActionResult> CreateTodo([FromBody] Todo todo)
         {
             await Mediator.Send(new Create.Command {Todo = todo});
 
@@ -27,11 +27,19 @@ namespace API.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult> EditTodo(Guid id, Todo todo)
+        public async Task<IActionResult> EditTodo(Guid id, Todo todo)
         {
             todo.Id = id;
 
             await Mediator.Send(new Edit.Command {Todo = todo});
+
+            return Ok();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteTodo(Guid id)
+        {
+            await Mediator.Send(new Delete.Command {Id = id});
 
             return Ok();
         }
