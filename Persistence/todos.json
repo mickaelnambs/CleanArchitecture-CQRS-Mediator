@@ -1,0 +1,82 @@
+[
+    {
+      "Description": "Buy groceries for the week",
+      "Status": "To Do"
+    },
+    {
+      "Description": "Complete the presentation slides for the meeting",
+      "Status": "In Progress"
+    },
+    {
+      "Description": "Call the dentist to schedule an appointment",
+      "Status": "To Do"
+    },
+    {
+      "Description": "Read chapters 5-7 of the book for the book club",
+      "Status": "To Do"
+    },
+    {
+      "Description": "Pay the utility bills online",
+      "Status": "Done"
+    },
+    {
+      "Description": "Go for a 30-minute jog in the morning",
+      "Status": "In Progress"
+    },
+    {
+      "Description": "Organize the closet and donate unused clothes",
+      "Status": "To Do"
+    },
+    {
+      "Description": "Research and compare prices for a new laptop",
+      "Status": "To Do"
+    },
+    {
+      "Description": "Write a thank-you email to the client",
+      "Status": "In Progress"
+    },
+    {
+      "Description": "Attend the online webinar at 2:00 PM",
+      "Status": "Done"
+    },
+    {
+      "Description": "Water the plants in the garden",
+      "Status": "Done"
+    },
+    {
+      "Description": "Start learning basic Spanish phrases for the upcoming trip",
+      "Status": "To Do"
+    },
+    {
+      "Description": "Fix the leaky faucet in the bathroom",
+      "Status": "To Do"
+    },
+    {
+      "Description": "Plan a weekend outing with friends",
+      "Status": "In Progress"
+    },
+    {
+      "Description": "Update the resume and LinkedIn profile",
+      "Status": "Done"
+    },
+    {
+      "Description": "Review and respond to work emails",
+      "Status": "To Do"
+    },
+    {
+      "Description": "Prepare a healthy lunch for tomorrow",
+      "Status": "In Progress"
+    },
+    {
+      "Description": "Sort through old emails and declutter the inbox",
+      "Status": "Done"
+    },
+    {
+      "Description": "Call mom and wish her a happy birthday",
+      "Status": "To Do"
+    },
+    {
+      "Description": "Practice playing the guitar for 20 minutes",
+      "Status": "To Do"
+    }
+]
