@@ -1,4 +1,5 @@
 using Domain;
+using FluentValidation;
 using MediatR;
 using Persistence;
 
@@ -9,6 +10,14 @@ namespace Application.Todos
         public class Command : IRequest
         {
             public Todo Todo { get; set; }
+        }
+
+        public class CommandValidator : AbstractValidator<Command>
+        {
+            public CommandValidator()
+            {
+                RuleFor(x => x.Todo).SetValidator(new TodoValidator());
+            }
         }
 
         public class Handler : IRequestHandler<Command>

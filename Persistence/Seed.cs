@@ -10,15 +10,15 @@ namespace Persistence
         {
             if (await context.Todos.AnyAsync()) return;
 
-            var booksData = await File.ReadAllTextAsync("../Persistence/todos.json");
+            var todosData = await File.ReadAllTextAsync("../Persistence/todos.json");
 
             var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
 
-            var books = JsonSerializer.Deserialize<List<Todo>>(booksData, options);
+            var todos = JsonSerializer.Deserialize<List<Todo>>(todosData, options);
 
-            foreach (var book in books)
+            foreach (var todo in todos)
             {
-                context.Add(book);
+                context.Add(todo);
             }
 
             await context.SaveChangesAsync();
