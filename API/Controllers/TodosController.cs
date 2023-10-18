@@ -7,7 +7,6 @@ namespace API.Controllers
 {
     public class TodosController : BaseApiController
     {
-        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetTodos()
         {
