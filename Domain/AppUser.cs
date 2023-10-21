@@ -6,6 +6,6 @@ namespace Domain
     {
         public string DisplayName { get; set; }
         public string Bio { get; set; }
-        public ICollection<Todo> Todos { get; set; }
+        public ICollection<Todo> Todos { get; set; } = new List<Todo>();
     }
 }
